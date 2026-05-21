@@ -225,7 +225,7 @@ The update operator $\Phi: \mathbb{R}^{|V| \times E} \to \mathbb{R}^{|V| \times 
 
 Reputation decays exponentially with inactivity, reducing vector magnitude while preserving direction:
 
-$$\|R^t_{\text{decayed}}[j]\|_2 = \|R^t[j]\|_2 \cdot \exp(-\lambda (t - t_{\text{last\_active}}))$$
+$$\|R^t_{\text{decayed}}[j]\|_2 = \|R^t[j]\|_2 \cdot \exp(-\lambda (t - t_{\text{last active}}))$$
 
 Decay rates ($\lambda$ per day) vary by domain:
 - **Skill Competency (e.g., Masonry, Wiring):** $\lambda = 0.0019$ (half-life of 365 days).
@@ -340,7 +340,7 @@ The proof hides the worker's name, gender, caste, age, and previous employer ide
 
 For credit underwriting, the system generates zero-knowledge proofs (ZKP) using Groth16 over BN-254 curves:
 
-$$\pi = \text{ZKP}\left(R_j.\text{domain} \geq \theta \land \text{CI}_j \geq 0.60 \land \text{VIR\_count\_90d} \geq 10\right)$$
+$$\pi = \text{ZKP}\left(R_j.\text{domain} \geq \theta \land \text{CI}_j \geq 0.60 \land \text{VIR count 90d} \geq 10\right)$$
 
 This allows financial institutions on the Unified Lending Interface (ULI) to verify creditworthiness without accessing raw transaction histories.
 
